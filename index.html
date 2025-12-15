@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawaiz Ali - DevOps Engineer &</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #667eea;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin: 35px 0;
+        }
+        
+        .section h2 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .projects {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .project-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .project-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .contact {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+            text-align: center;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        
+        .contact-link:hover {
+            color: #764ba2;
+        }
+        
+        .emoji {
+            font-size: 1.3em;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .skills {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SHAWAIZ ALI</h1>
+            <p class="subtitle">DevOps Engineer | Cloud Infrastructure Specialist</p>
+        </header>
+        
+        <div class="section">
+            <h2><span class="emoji">👨‍💻</span> About Me</h2>
+            <p>
+                DevOps Engineer with 2+ years of experience in AWS cloud infrastructure, 
+                Linux system administration, and CI/CD automation. Passionate about building 
+                reliable, scalable systems and automating everything that can be automated.
+            </p>
+            <p style="margin-top: 15px;">
+                Currently based in Portugal and open to opportunities across the EU.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🛠️</span> Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Linux</div>
+                <div class="skill-tag">CI/CD</div>
+                <div class="skill-tag">GitHub Actions</div>
+                <div class="skill-tag">Kubernetes</div>
+                <div class="skill-tag">Terraform</div>
+                <div class="skill-tag">Bash</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Networking</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🚀</span> Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Automated CI/CD Pipeline</h3>
+                    <p>
+                        Built end-to-end CI/CD workflow using GitLab CI to automatically test, 
+                        build, and deploy Dockerized Node.js application to AWS EC2. 
+                        Reduced deployment time by 50%.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>AWS Static Website with Auto-Deploy</h3>
+                    <p>
+                        This website! Hosted on AWS S3 with automated deployment using GitHub Actions. 
+                        Features CloudFront CDN for global performance and SSL/TLS encryption.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Linux Server Hardening</h3>
+                    <p>
+                        Implemented comprehensive security hardening on Ubuntu production servers. 
+                        Configured UFW firewall, SSH key authentication, and fail2ban. 
+                        Zero security incidents achieved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">📚</span> Currently Learning</h2>
+            <p>
+                • AWS Solutions Architect Associate Certification<br>
+                • Kubernetes (CKA preparation)<br>
+                • Infrastructure as Code with Terraform<br>
+                • Python for DevOps Automation
+            </p>
+        </div>
+        
+        <div class="contact">
+            <h2><span class="emoji">📬</span> Let's Connect</h2>
+            <div class="contact-links">
+                <a href="mailto:shawaizedu@gmail.com" class="contact-link">📧 Email</a>
+                <a href="https://linkedin.com/in/shawaiz-ali" class="contact-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/shawaiz3138" class="contact-link" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2024 Shawaiz Ali | DevOps Engineer | Built with ❤️ and deployed with AWS + GitHub Actions</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Last updated: <span id="update-date"></span>
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // Display last update date
+        document.getElementById('update-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
